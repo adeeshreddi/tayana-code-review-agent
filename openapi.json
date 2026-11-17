@@ -1,0 +1,9 @@
+{
+  "openapi": "3.1.0",
+  "info": {"title": "Autonomous Code Review & Refactoring Agent", "version": "1.0.0"},
+  "paths": {
+    "/health": {"get": {"summary": "Health check", "responses": {"200": {"description": "Healthy"}}}},
+    "/api/webhooks/github": {"post": {"summary": "Start a pull request review", "responses": {"200": {"description": "Review started and paused for approval"}}}},
+    "/api/reviews/{thread_id}/approve": {"post": {"summary": "Approve or request changes", "parameters": [{"name": "thread_id", "in": "path", "required": true, "schema": {"type": "string"}}], "responses": {"200": {"description": "Review resumed"}}}}
+  }
+}
