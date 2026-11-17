@@ -4,3 +4,10 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 checkpoints.sqlite
+ checkpoints.sqlite
+checkpoints.sqlite-shm
+checkpoints.sqlite-wal
+.env
+.venv/
+__pycache__/
+.pytest_cache/
